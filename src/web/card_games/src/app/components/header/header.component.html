@@ -1,0 +1,41 @@
+<!--<header>
+    <div class="container logo-nav-container">
+        <nav class="menu">
+            <a href="#">
+                <img [src] ="logo" alt="logo" height="50px" width="50px">
+            </a>
+            <ul>
+                <li><a *ngIf="!auth.isLoggedIn; else viewLogout" (click)="conectar()">Login</a></li>
+                <li><a routerLink="/home">inicio</a></li>
+                <li><a>{{auth.nameLogged}}</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<ng-template #viewLogout>
+    <a (click)="logout()">Logout</a>
+</ng-template>
+<br>-->
+<header>
+<nav> 
+    <ul class="menu"> 
+        <li class="logo">
+            <a href="#">
+                <img [src] ="logo" alt="logo" height="50px" width="50px">
+            </a>
+        </li> 
+        <li class="item">
+            <a *ngIf="!auth.isLoggedIn; else viewLogout" (click)="conectar()">Login</a>
+        </li> 
+        <li class="item">
+            <a routerLink="/home">Home</a>
+        </li> 
+        <li class="item">
+            <a>{{auth.nameLogged}}</a>
+        </li> 
+    </ul> 
+</nav>
+</header>
+<ng-template #viewLogout>
+    <a (click)="logout()">Logout</a>
+</ng-template>

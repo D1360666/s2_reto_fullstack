@@ -1,0 +1,58 @@
+<div class="cont">
+    <div class="container">
+
+        <h1>Indicaciones de Juego</h1>
+        <div class="contenido">
+            <p>Para iniciar el juego debes estar registrado, incluso los jugadores</p>
+            <button type="button" (click)="btnNewGame()">
+                Crear Juego
+            </button>
+        </div>
+    <!--    <button (click)="btnGameList()">
+            Consultar Juegos Creados
+        </button>-->
+       
+
+ 
+ <!--
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>uri</th>
+      <td>Nombre</td>
+      <td>Poder</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let cartaModel of carta;">
+      <td>{{cartaModel.idCard}}</td>
+      <td><img src={{cartaModel.uri}} style="heigth:50px; width:20px;"></td>
+      <td>{{cartaModel.nombre}}</td>
+      <td>{{cartaModel.poder}}</td>
+    </tr>
+  </tbody>
+</table>
+-->
+ <h1>Juegos Activos</h1>
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <td>Status</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let juegoModel of juego;">
+        <td>{{juegoModel.idGame}}</td>
+        <td>{{juegoModel.nombre}}</td>
+        <td>{{juegoModel.estado}}</td>
+        <td><input type="button" value="Unirme"></td>
+      </tr>
+    </tbody>
+  </table>
+ 
+
+
+</div>
